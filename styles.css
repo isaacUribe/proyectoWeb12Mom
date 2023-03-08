@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root{
+    --oscuro: #1B4F72;
+    --claro:#5DADE2;
+    --medio: #3498DB ;
+
+}
+
+*{
+    font-family:'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize; 
+}
+
+
+body{
+    background: #e5e5f7;
+    display: flex;
+    min-height: 100vh;
+
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-size: 1.8rem;
+    color: var(--oscuro);
+}
+
+header .logo span{
+    color: var(--claro);
+}
+
+header .navbar a{
+    font-size: 1rem;
+    margin-left: 2rem;
+    color: var(--oscuro);
+}
+
+header .navbar a:hover{
+    color: var(--claro);
+}
+
+.form{
+    background-color: white;
+    margin:auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 6rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0, 0, 0 /30%);
+    text-align: center;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: var(--oscuro);
+}
+
+.form_container{
+    margin-top: 3rem;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_grupo{
+    position: relative;
+
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    font-size: 1rem;
+    padding: .6rem .3em;
+    border-bottom: 1px solid #5757577e;
+
+}
+
+.form_label{
+    color: rgba(0, 0, 0, 0.63);
+
+}
+
+.form_submit{
+    background: var(--medio);
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+#menu{
+    display: none;
+}
+
+#form_inicio{
+    display: block;
+}
+
+#form_celulares{
+    display: none;
+}
+
+#form_portatiles{
+    display: none;
+}
+#form_clientes{
+    display: none;
+}
+
+
+#box{
+    border: 1px solid #5757577e;
+}
+
+
