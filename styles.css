@@ -93,8 +93,11 @@ header .navbar a:hover{
     font-size: 1rem;
     padding: .6rem .3em;
     border-bottom: 1px solid #5757577e;
+    
 
 }
+
+
 
 .form_label{
     color: rgba(0, 0, 0, 0.63);
@@ -131,8 +134,6 @@ header .navbar a:hover{
 }
 
 
-#box{
-    border: 1px solid #5757577e;
-}
+
 
 

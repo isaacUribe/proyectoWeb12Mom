@@ -24,7 +24,7 @@
       <h2 class="form_title">Inicia Sesion</h2>
       <div class="form_container">
         <div class="form_grupo">
-          <input type="text" name="usuario" class="form_input" placeholder="" required/>
+          <input type="text" name="usuario" class="form_input" placeholder="" required id="user"/>
           <label for="usuario" class="form_label" >Usuario</label>
           <span class="form_line"></span>
         </div>
@@ -35,6 +35,7 @@
             class="form_input"
             placeholder=""
             required
+            id="pass"
           />
           <label for="usuario" class="form_label">Password</label>
           <span class="form_line"></span>
@@ -52,7 +53,7 @@
       <h2 class="form_title">Celulares</h2>
       <div class="form_container">
         <div class="form_grupo">
-          <input type="text" name="nombre" class="form_input" placeholder="" />
+          <input type="text" name="nombre" class="form_input" placeholder="" id="nombre_celu" />
           <label for="nombre" class="form_label">Nombre</label>
           <span class="form_line"></span>
         </div>
@@ -62,17 +63,18 @@
             name="referecia"
             class="form_input"
             placeholder=""
+            id="referencia_celu"
           />
           <label for="referecia" class="form_label">Referecia</label>
           <span class="form_line"></span>
         </div>
         <div class="form_grupo">
-          <input type="text" name="codigo" class="form_input" placeholder="" />
+          <input type="text" name="codigo" class="form_input" placeholder="" id="codigo_celu" />
           <label for="codigo" class="form_label">Codigo</label>
           <span class="form_line"></span>
         </div>
         <div class="form_grupo">
-          <input type="text" name="valor" class="form_input" placeholder="" />
+          <input type="text" name="valor" class="form_input" placeholder="" id="valor_celu"/>
           <label for="valor" class="form_label">Valor</label>
           <span class="form_line"></span>
         </div>
@@ -82,6 +84,7 @@
             name="cantidad"
             class="form_input"
             placeholder=""
+            id="cantidad_celu"
           />
           <label for="cantidad" class="form_label">Cantidad Vendida</label>
           <span class="form_line"></span>
@@ -93,7 +96,7 @@
             cols="30"
             rows="10"
             class="form_input"
-            id="box"
+            id="box_celu"
           ></textarea>
           <label class="form_label">Insertar Imagen</label>
         </div>
@@ -101,7 +104,7 @@
           type="submit"
           class="form_submit"
           value="Enviar"
-          id="btn_celulares"
+          id="btn_celulares_form"
         />
       </div>
     </section>
