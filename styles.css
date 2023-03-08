@@ -133,7 +133,16 @@ header .navbar a:hover{
     display: none;
 }
 
-
+.card{
+    margin: 10px auto;
+    background: #C4DFF1;
+    color:#25292B;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 20px; 
+    text-align: left;           
+}
 
 
 

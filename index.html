@@ -24,8 +24,15 @@
       <h2 class="form_title">Inicia Sesion</h2>
       <div class="form_container">
         <div class="form_grupo">
-          <input type="text" name="usuario" class="form_input" placeholder="" required id="user"/>
-          <label for="usuario" class="form_label" >Usuario</label>
+          <input
+            type="text"
+            name="usuario"
+            class="form_input"
+            placeholder=""
+            required
+            id="user"
+          />
+          <label for="usuario" class="form_label">Usuario</label>
           <span class="form_line"></span>
         </div>
         <div class="form_grupo">
@@ -53,7 +60,13 @@
       <h2 class="form_title">Celulares</h2>
       <div class="form_container">
         <div class="form_grupo">
-          <input type="text" name="nombre" class="form_input" placeholder="" id="nombre_celu" />
+          <input
+            type="text"
+            name="nombre"
+            class="form_input"
+            placeholder=""
+            id="nombre_celu"
+          />
           <label for="nombre" class="form_label">Nombre</label>
           <span class="form_line"></span>
         </div>
@@ -69,12 +82,24 @@
           <span class="form_line"></span>
         </div>
         <div class="form_grupo">
-          <input type="text" name="codigo" class="form_input" placeholder="" id="codigo_celu" />
+          <input
+            type="text"
+            name="codigo"
+            class="form_input"
+            placeholder=""
+            id="codigo_celu"
+          />
           <label for="codigo" class="form_label">Codigo</label>
           <span class="form_line"></span>
         </div>
         <div class="form_grupo">
-          <input type="text" name="valor" class="form_input" placeholder="" id="valor_celu"/>
+          <input
+            type="text"
+            name="valor"
+            class="form_input"
+            placeholder=""
+            id="valor_celu"
+          />
           <label for="valor" class="form_label">Valor</label>
           <span class="form_line"></span>
         </div>
@@ -106,111 +131,172 @@
           value="Enviar"
           id="btn_celulares_form"
         />
+        <input
+          type="submit"
+          class="form_submit"
+          value="Limpiar"
+          id="btn_limpiar"
+          onclick="vaciar_celulares()"
+        />
       </div>
     </section>
     <section class="form" id="form_portatiles">
-        <h2 class="form_title">Portatiles</h2>
-        <div class="form_container">
-          <div class="form_grupo">
-            <input type="text" name="nombre" class="form_input" placeholder="" />
-            <label for="nombre" class="form_label">Nombre</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <input
-              type="text"
-              name="referecia"
-              class="form_input"
-              placeholder=""
-            />
-            <label for="referecia" class="form_label">Referecia</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <input type="text" name="codigo" class="form_input" placeholder="" />
-            <label for="codigo" class="form_label">Codigo</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <input type="text" name="valor" class="form_input" placeholder="" />
-            <label for="valor" class="form_label">Valor</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <input
-              type="text"
-              name="cantidad"
-              class="form_input"
-              placeholder=""
-            />
-            <label for="cantidad" class="form_label">Cantidad Vendida</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <textarea
-              required
-              name="box"
-              cols="30"
-              rows="10"
-              class="form_input"
-              id="box"
-            ></textarea>
-            <label class="form_label">Insertar Imagen</label>
-          </div>
+      <h2 class="form_title">Portatiles</h2>
+      <div class="form_container">
+        <div class="form_grupo">
           <input
-            type="submit"
-            class="form_submit"
-            value="Enviar"
-            id="btn_portatiles"
+            type="text"
+            name="nombre"
+            class="form_input"
+            placeholder=""
+            id="nombre_port"
           />
+          <label for="nombre" class="form_label">Nombre</label>
+          <span class="form_line"></span>
         </div>
-      </section>
-      <section class="form" id="form_clientes">
-        <h2 class="form_title">Clientes</h2>
-        <div class="form_container">
-          <div class="form_grupo">
-            <input type="text" name="nombre" class="form_input" placeholder="" />
-            <label for="nombre" class="form_label">Nombre</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <input
-              type="text"
-              name="referecia"
-              class="form_input"
-              placeholder=""
-            />
-            <label for="referecia" class="form_label">Documento</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <input type="text" name="codigo" class="form_input" placeholder="" />
-            <label for="codigo" class="form_label">Celular</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <input type="text" name="valor" class="form_input" placeholder="" />
-            <label for="valor" class="form_label">Direccion</label>
-            <span class="form_line"></span>
-          </div>
-          <div class="form_grupo">
-            <input
-              type="email"
-              name="cantidad"
-              class="form_input"
-              placeholder=""
-            />
-            <label for="cantidad" class="form_label">Correo</label>
-            <span class="form_line"></span>
-          </div>
+        <div class="form_grupo">
           <input
-            type="submit"
-            class="form_submit"
-            value="Enviar"
-            id="btn_clientes"
+            type="text"
+            name="referecia"
+            class="form_input"
+            placeholder=""
+            id="referencia_port"
           />
+          <label for="referecia" class="form_label">Referecia</label>
+          <span class="form_line"></span>
         </div>
-      </section>
+        <div class="form_grupo">
+          <input
+            type="text"
+            name="codigo"
+            class="form_input"
+            placeholder=""
+            id="codigo_port"
+          />
+          <label for="codigo" class="form_label">Codigo</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_grupo">
+          <input
+            type="text"
+            name="valor"
+            class="form_input"
+            placeholder=""
+            id="valor_port"
+          />
+          <label for="valor" class="form_label">Valor</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_grupo">
+          <input
+            type="text"
+            name="cantidad"
+            class="form_input"
+            placeholder=""
+            id="cantidad_port"
+          />
+          <label for="cantidad" class="form_label">Cantidad Vendida</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_grupo">
+          <textarea
+            required
+            name="box"
+            cols="30"
+            rows="10"
+            class="form_input"
+            id="box_port"
+          ></textarea>
+          <label class="form_label">Insertar Imagen</label>
+        </div>
+        <input
+          type="submit"
+          class="form_submit"
+          value="Enviar"
+          id="btn_portatiles_form"
+        />
+        <input
+          type="submit"
+          class="form_submit"
+          value="Limpiar"
+          id="btn_limpiar"
+          onclick="vaciar_portatiles()"
+        />
+      </div>
+    </section>
+    <section class="form" id="form_clientes">
+      <h2 class="form_title">Clientes</h2>
+      <div class="form_container">
+        <div class="form_grupo">
+          <input
+            type="text"
+            name="nombre"
+            class="form_input"
+            placeholder=""
+            id="nombre_cli"
+          />
+          <label for="nombre" class="form_label">Nombre</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_grupo">
+          <input
+            type="text"
+            name="referecia"
+            class="form_input"
+            placeholder=""
+            id="documento_cli"
+          />
+          <label for="referecia" class="form_label">Documento</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_grupo">
+          <input
+            type="text"
+            name="codigo"
+            class="form_input"
+            placeholder=""
+            id="celular_cli"
+          />
+          <label for="codigo" class="form_label">Celular</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_grupo">
+          <input
+            type="text"
+            name="valor"
+            class="form_input"
+            placeholder=""
+            id="direccion_cli"
+          />
+          <label for="valor" class="form_label">Direccion</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_grupo">
+          <input
+            type="email"
+            name="cantidad"
+            class="form_input"
+            placeholder=""
+            id="correo_cli"
+          />
+          <label for="cantidad" class="form_label">Correo</label>
+          <span class="form_line"></span>
+        </div>
+        <input
+          type="submit"
+          class="form_submit"
+          value="Enviar"
+          id="btn_clientes_form"
+        />
+        <input
+          type="submit"
+          class="form_submit"
+          value="Limpiar"
+          id="btn_limpiar"
+          onclick="vaciar_clientes()"
+        />
+      </div>
+    </section>
     <script src="app.js"></script>
     <!-- 
     IMPORTANTE 
