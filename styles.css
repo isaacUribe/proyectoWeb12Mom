@@ -20,7 +20,7 @@
 
 
 body{
-    background: #e5e5f7;
+    background-image: url(img/fondos-para-páginas-web-6.jpg);
     display: flex;
     min-height: 100vh;
 
@@ -143,6 +143,9 @@ header .navbar a:hover{
     border-radius: 20px; 
     text-align: left;           
 }
-
+img{
+    width: 250px;
+    height: 200px;
+}
 
 

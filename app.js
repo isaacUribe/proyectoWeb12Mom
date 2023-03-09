@@ -84,8 +84,8 @@ const guardar_info_celulares = () =>{
         datos[3]=valor
         let cantidad = document.getElementById('cantidad_celu').value
         datos[4]=cantidad
-        let box = document.getElementById('box_celu').value
-        datos[5]=box
+        let archivo = document.getElementById('img_celu').files
+        datos[5]=archivo
 
 
         if(nombre == ""){
@@ -99,13 +99,18 @@ const guardar_info_celulares = () =>{
             let p4 = document.createElement('p')
             let p5 = document.createElement('p')
             let p6 = document.createElement('p')
+            let img = document.createElement('img')
             div.className = 'card'
             p.textContent = "Nombre: " + nombre
             p2.textContent = "Referecia: " + referencia
             p3.textContent = "Codigo: " + codigo
             p4.textContent = "Valor: " + valor
             p5.textContent = "Cantidad Vendida: " + cantidad
-            p6.textContent = "Imagen: " + box
+            p6.textContent = "Imagen: "
+
+            let primer_archivo = archivo[0]
+            let objectUrl = URL.createObjectURL(primer_archivo)
+            img.src = objectUrl
 
             section.append(div)
             div.append(p)
@@ -114,6 +119,7 @@ const guardar_info_celulares = () =>{
             div.append(p4)
             div.append(p5)
             div.append(p6)
+            div.append(img)
         }
 
         
@@ -130,7 +136,7 @@ function vaciar_celulares(){
     let codigo = document.getElementById('codigo_celu').value = ""
     let valor = document.getElementById('valor_celu').value = ""
     let cantidad = document.getElementById('cantidad_celu').value = ""
-    let box = document.getElementById('box_celu').value = ""
+    let box = document.getElementById('img_celu').value = ""
 }
 
 const btn_form_portatiles = document.getElementById('btn_portatiles_form')
@@ -147,8 +153,8 @@ const guardar_info_portatiles = () =>{
         datos[3]=valor
         let cantidad = document.getElementById('cantidad_port').value
         datos[4]=cantidad
-        let box = document.getElementById('box_port').value
-        datos[5]=box
+        let archivo = document.getElementById('img_port').files
+        datos[5]=archivo
 
         if(nombre == ""){
 
@@ -161,13 +167,20 @@ const guardar_info_portatiles = () =>{
             let p4 = document.createElement('p')
             let p5 = document.createElement('p')
             let p6 = document.createElement('p')
+            let img = document.createElement('img')
             div.className = 'card'
             p.textContent = "Nombre: " + nombre
             p2.textContent = "Referecia: " + referencia
             p3.textContent = "Codigo: " + codigo
             p4.textContent = "Valor: " + valor
             p5.textContent = "Cantidad Vendida: " + cantidad
-            p6.textContent = "Imagen: " + box
+            p6.textContent = "Imagen: " 
+            let primer_archivo = archivo[0]
+            let objectUrl = URL.createObjectURL(primer_archivo)
+            img.src = objectUrl
+
+            img.src = objectUrl
+
 
             section.append(div)
             div.append(p)
@@ -176,6 +189,7 @@ const guardar_info_portatiles = () =>{
             div.append(p4)
             div.append(p5)
             div.append(p6)
+            div.append(img)
         }
 
         
@@ -192,7 +206,7 @@ function vaciar_portatiles(){
     let codigo = document.getElementById('codigo_port').value = ""
     let valor = document.getElementById('valor_port').value = ""
     let cantidad = document.getElementById('cantidad_port').value = ""
-    let box = document.getElementById('box_port').value = ""
+    let box = document.getElementById('img_port').value = ""
 }
 
 
